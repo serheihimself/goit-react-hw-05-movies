@@ -21,7 +21,7 @@ export default function Cast() {
         const movieCast = await fetchGetCast(movieId);
         setCast(movieCast);
       } catch (error) {
-        console.log('error :>> ', error);
+        console.log(error);
       }
     }
     getMovieCast();
